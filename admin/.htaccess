@@ -1,0 +1,12 @@
+# Admin Panel – Security Rules
+Options -Indexes
+
+# Block direct access to includes
+<FilesMatch "^(db|auth|functions|header|footer)\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# PHP sessions security
+php_value session.use_strict_mode 1
+php_value session.cookie_httponly 1

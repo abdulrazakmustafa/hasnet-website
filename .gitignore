@@ -1,0 +1,25 @@
+# Environment / Config overrides
+.env
+config.local.php
+
+# Uploaded files (don't commit user uploads)
+uploads/*
+!uploads/.gitkeep
+
+# PHP generated / cache
+*.log
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Backup files
+*.bak
+*.sql.bak
+*.htaccess.phpupgrader.*

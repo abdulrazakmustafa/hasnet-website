@@ -1,0 +1,27 @@
+/* ============================================
+   Hasnet ICT Solution - Custom Overrides
+   ============================================ */
+
+/* Fix horizontal overflow / white line on left side caused by mobile menu */
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+.mobile-menu {
+  width: 300px !important;
+  max-width: 300px !important;
+  overflow-x: hidden;
+}
+
+/* Ensure no element bleeds outside viewport */
+.main-wrapper {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
