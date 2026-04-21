@@ -42,43 +42,47 @@ include __DIR__ . '/includes/header.php';
 </div>
 
 <!-- Stat Cards -->
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:28px">
+<div class="stat-grid">
 
-  <div class="stat-card">
-    <div class="stat-icon purple"><i class="fa-solid fa-briefcase"></i></div>
-    <div>
-      <div class="stat-label">Portfolio Items</div>
+  <a href="<?= APP_URL ?>/admin/portfolio/index.php" class="stat-card stat-purple">
+    <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+    <div class="stat-info">
       <div class="stat-value"><?= $stats['portfolio'] ?></div>
+      <div class="stat-label">Portfolio Items</div>
       <div class="stat-sub">Published works</div>
     </div>
-  </div>
+    <i class="fa-solid fa-arrow-right stat-arrow"></i>
+  </a>
 
-  <div class="stat-card">
-    <div class="stat-icon blue"><i class="fa-solid fa-newspaper"></i></div>
-    <div>
-      <div class="stat-label">Blog Posts</div>
+  <a href="<?= APP_URL ?>/admin/blog/index.php" class="stat-card stat-blue">
+    <div class="stat-icon"><i class="fa-solid fa-newspaper"></i></div>
+    <div class="stat-info">
       <div class="stat-value"><?= $stats['blog'] ?></div>
+      <div class="stat-label">Blog Posts</div>
       <div class="stat-sub">Published posts</div>
     </div>
-  </div>
+    <i class="fa-solid fa-arrow-right stat-arrow"></i>
+  </a>
 
-  <div class="stat-card">
-    <div class="stat-icon green"><i class="fa-solid fa-envelope-open-text"></i></div>
-    <div>
-      <div class="stat-label">Subscribers</div>
+  <a href="<?= APP_URL ?>/admin/subscribers/index.php" class="stat-card stat-green">
+    <div class="stat-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+    <div class="stat-info">
       <div class="stat-value"><?= $stats['subscribers'] ?></div>
+      <div class="stat-label">Subscribers</div>
       <div class="stat-sub">Total subscribers</div>
     </div>
-  </div>
+    <i class="fa-solid fa-arrow-right stat-arrow"></i>
+  </a>
 
-  <div class="stat-card">
-    <div class="stat-icon orange"><i class="fa-solid fa-file-invoice"></i></div>
-    <div>
-      <div class="stat-label">New Quotes</div>
+  <a href="<?= APP_URL ?>/admin/quotes/index.php" class="stat-card stat-orange">
+    <div class="stat-icon"><i class="fa-solid fa-file-invoice"></i></div>
+    <div class="stat-info">
       <div class="stat-value"><?= $stats['quotes'] ?></div>
+      <div class="stat-label">New Quotes</div>
       <div class="stat-sub">Unread requests</div>
     </div>
-  </div>
+    <i class="fa-solid fa-arrow-right stat-arrow"></i>
+  </a>
 
 </div>
 

@@ -125,94 +125,82 @@ require_once("./links.php");
     }
 </style>
 
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="height: 0%;">
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000"  style="background-image: url('/assets/img/home-slider/bg-02.jpg'); background-size: cover; background-repeat: repeat;">
+        <div class="carousel-item active" data-bs-interval="4000" style="background-image: url(‘assets/img/home-slider/bg-02.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="carousel-overlay">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center text-white">
-                    <h5>Web Design, Hosting & Digital Marketing</h5> <br>
-                    <p> We transform your online presence with stunning web design, reliable hosting, and impactful digital marketing strategies to drive your success.</p>
-                    
-                    
-                   
-<!-- Explore More & Bowncing Go-Down Icon -->
-<div class="migrate-btns">
-    <a href="./web-design-hosting-and-digital-marketing.php" class="template-btn outline-btn" style="border: none;">Explore More</a> <br>
-    <a href="#1st-services" class="scroll-down-bt">
-        <i class="fa-solid fa-chevron-down mt-50" style="color: white; font-size: 24px; animation: bounce 2s infinite;"></i> <br>
-        <i class="fa-solid fa-chevron-down" style="color: white; font-size: 24px; animation: bounce 2s infinite;"></i>
-    </a>
-</div>
-<!-- Explore More & Bowncing Go-Down Icon -->
+                    <h5>Web Design, Hosting &amp; Digital Marketing</h5>
+                    <p>We transform your online presence with stunning web design, reliable hosting, and impactful digital marketing strategies to drive your success.</p>
+                    <div class="migrate-btns">
+                        <a href="web-design-hosting-and-digital-marketing.php" class="template-btn outline-btn">Explore More</a>
+                        <a href="#1st-services" class="scroll-down-bt d-block mt-3">
+                            <i class="fa-solid fa-chevron-down" style="color:white;font-size:24px;animation:bounce 1.5s infinite;display:block"></i>
+                            <i class="fa-solid fa-chevron-down" style="color:white;font-size:24px;animation:bounce 1.5s infinite 0.2s;display:block"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- <img src="/assets/img/home-slider/bg-01.jpg" class="d-block w-100" alt="First slide"> -->
         </div>
 
-        <div class="carousel-item" data-bs-interval="3000"  style="background-image: url('/assets/img/home-slider/bg-05.jpg'); background-size: cover; background-repeat: repeat;">
+        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘assets/img/home-slider/bg-05.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="carousel-overlay">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center text-white">
-                    <h5>Networking & Digital Security</h5> <br>
+                    <h5>Networking &amp; Digital Security</h5>
                     <p>We ensure seamless connectivity and robust protection with our advanced networking solutions and cutting-edge digital security measures.</p>
-
-                   <!-- Explore More & Bowncing Go-Down Icon -->
-<div class="migrate-btns">
-    <a href="./web-design-hosting-and-digital-marketing.php" class="template-btn outline-btn" style="border: none;">Explore More</a> <br>
-    <a href="#1st-services" class="scroll-down-bt">
-        <i class="fa-solid fa-chevron-down mt-50" style="color: white; font-size: 24px; animation: bounce 2s infinite;"></i> <br>
-        <i class="fa-solid fa-chevron-down" style="color: white; font-size: 24px; animation: bounce 2s infinite;"></i>
-    </a>
-</div>
-<!-- Explore More & Bowncing Go-Down Icon -->
-
+                    <div class="migrate-btns">
+                        <a href="networking-and-digital-security.php" class="template-btn outline-btn">Explore More</a>
+                        <a href="#1st-services" class="scroll-down-bt d-block mt-3">
+                            <i class="fa-solid fa-chevron-down" style="color:white;font-size:24px;animation:bounce 1.5s infinite;display:block"></i>
+                            <i class="fa-solid fa-chevron-down" style="color:white;font-size:24px;animation:bounce 1.5s infinite 0.2s;display:block"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- <img src="/assets/img/home-slider/bg-02.jpg" class="d-block w-100" alt="Second slide"> -->
         </div>
 
-        <div class="carousel-item" data-bs-interval="3000" style="background-image: url('/assets/img/home-slider/bg-06.jpg'); background-size: cover; background-repeat: repeat;">
+        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘assets/img/home-slider/bg-06.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="carousel-overlay">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center text-white">
-                    <h5>Graphic Design & Publish Printing</h5> <br>
+                    <h5>Graphic Design &amp; Publish Printing</h5>
                     <p>We create captivating visuals and high-quality prints, bringing your brand’s vision to life with our professional graphic design and publishing services.</p>
-                
-                    <!-- Explore More & Bowncing Go-Down Icon -->
-<div class="migrate-btns">
-    <a href="./web-design-hosting-and-digital-marketing.php" class="template-btn outline-btn" style="border: none;">Explore More</a> <br>
-    <a href="#1st-services" class="scroll-down-bt">
-        <i class="fa-solid fa-chevron-down mt-50" style="color: white; font-size: 24px; animation: bounce 2s infinite;"></i> <br>
-        <i class="fa-solid fa-chevron-down" style="color: white; font-size: 24px; animation: bounce 2s infinite;"></i>
-    </a>
-</div>
-<!-- Explore More & Bowncing Go-Down Icon -->
-
+                    <div class="migrate-btns">
+                        <a href="graphic-design-and-publish-printing.php" class="template-btn outline-btn">Explore More</a>
+                        <a href="#1st-services" class="scroll-down-bt d-block mt-3">
+                            <i class="fa-solid fa-chevron-down" style="color:white;font-size:24px;animation:bounce 1.5s infinite;display:block"></i>
+                            <i class="fa-solid fa-chevron-down" style="color:white;font-size:24px;animation:bounce 1.5s infinite 0.2s;display:block"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- <img src="/assets/img/home-slider/bg-03.jpg" class="d-block w-100" alt="Third slide"> -->
         </div>
 
-        <div class="carousel-item" data-bs-interval="3000"  style="background-image: url('/assets/img/home-slider/bg-07.jpg'); background-size: cover; background-repeat: repeat;">
+        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘assets/img/home-slider/bg-07.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="carousel-overlay">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center text-white">
-                    <h5>ICT Hardware Supply, Installation & Maintanance</h5> <br>
+                    <h5>ICT Hardware Supply, Installation &amp; Maintenance</h5>
                     <p>We provide comprehensive ICT hardware solutions, from supply and installation to ongoing maintenance, ensuring your technology infrastructure is always at its best.</p>
-                    
-<!-- Explore More & Bowncing Go-Down Icon -->
-<div class="migrate-btns">
-    <a href="./web-design-hosting-and-digital-marketing.php" class="template-btn outline-btn" style="border: none;">Explore More</a> <br>
-    <a href="#1st-services" class="scroll-down-bt">
-        <i class="fa-solid fa-chevron-down mt-50" style="color: white; font-size: 24px; animation: bounce 2s infinite;"></i> <br>
-        <i class="fa-solid fa-chevron-down" style="color: white; font-size: 24px; animation: bounce 2s infinite;"></i>
-    </a>
-</div>
-<!-- Explore More & Bowncing Go-Down Icon -->
-
+                    <div class="migrate-btns">
+                        <a href="ict-hardware-supply-and-maintanance.php" class="template-btn outline-btn">Explore More</a>
+                        <a href="#1st-services" class="scroll-down-bt d-block mt-3">
+                            <i class="fa-solid fa-chevron-down" style="color:white;font-size:24px;animation:bounce 1.5s infinite;display:block"></i>
+                            <i class="fa-solid fa-chevron-down" style="color:white;font-size:24px;animation:bounce 1.5s infinite 0.2s;display:block"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- <img src="/assets/img/home-slider/bg-02.jpg" class="d-block w-100" alt="Second slide"> -->
         </div>
 
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 
 

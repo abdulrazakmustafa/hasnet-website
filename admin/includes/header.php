@@ -43,10 +43,6 @@ $initials = implode('', array_map(fn($w) => strtoupper($w[0]), array_slice(explo
   <aside class="admin-sidebar" id="adminSidebar">
     <div class="sidebar-brand">
       <img src="<?= APP_URL ?>/assets/img/logo-white-2.png" alt="Hasnet Logo" onerror="this.style.display='none'">
-      <div>
-        <span>Hasnet Admin</span>
-        <small>ICT Solution</small>
-      </div>
     </div>
 
     <nav class="sidebar-nav">
