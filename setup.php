@@ -50,18 +50,29 @@ try {
 $schema_file = __DIR__ . '/database/schema.sql';
 if (file_exists($schema_file)) {
     $sql = file_get_contents($schema_file);
-    // Split and run individual statements
-    $statements = array_filter(array_map('trim', explode(';', $sql)));
+
+    // Strip all comment lines (-- ...) before splitting on ;
+    $lines    = explode("\n", $sql);
+    $stripped = [];
+    foreach ($lines as $line) {
+        $trimmed = trim($line);
+        if (str_starts_with($trimmed, '--') || $trimmed === '') continue;
+        $stripped[] = $line;
+    }
+    $clean_sql = implode("\n", $stripped);
+
+    $statements = array_filter(array_map('trim', explode(';', $clean_sql)));
     $ok = 0; $fail = 0;
     foreach ($statements as $stmt) {
-        if (empty($stmt) || str_starts_with($stmt, '--') || str_starts_with($stmt, '/*')) continue;
+        if (empty($stmt)) continue;
         try {
             $pdo->exec($stmt);
             $ok++;
         } catch (PDOException $e) {
-            // ignore "already exists" errors
+            // ignore "already exists" and duplicate errors (re-running setup)
             if (!str_contains($e->getMessage(), 'already exists') && !str_contains($e->getMessage(), 'Duplicate entry')) {
                 $fail++;
+                log_err('SQL error: ' . $e->getMessage());
             }
         }
     }

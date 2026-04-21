@@ -5,8 +5,8 @@
  */
 
 // ─── Environment ─────────────────────────────────────────────────────────────
-define('APP_ENV', getenv('APP_ENV') ?: 'production'); // 'local' or 'production'
-define('APP_URL',  getenv('APP_URL')  ?: 'https://hasnet.co.tz');
+define('APP_ENV', getenv('APP_ENV') ?: 'local'); // 'local' or 'production'
+define('APP_URL',  getenv('APP_URL')  ?: 'http://localhost/hasnet-website');
 define('APP_NAME', 'Hasnet ICT Solution');
 
 // ─── Database ─────────────────────────────────────────────────────────────────
