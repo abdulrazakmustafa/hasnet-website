@@ -1,5 +1,7 @@
 <?php
+require_once('./config.php');
 require_once("./links.php");
+$base = rtrim(APP_URL, '/');
 ?>
 
 <!--title-->
@@ -127,7 +129,7 @@ require_once("./links.php");
 
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="4000" style="background-image: url(‘assets/img/home-slider/bg-02.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="carousel-item active" data-bs-interval="4000" style="background-image: url(‘<?= $base ?>/assets/img/home-slider/bg-02.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="carousel-overlay">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center text-white">
                     <h5>Web Design, Hosting &amp; Digital Marketing</h5>
@@ -143,7 +145,7 @@ require_once("./links.php");
             </div>
         </div>
 
-        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘assets/img/home-slider/bg-05.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘<?= $base ?>/assets/img/home-slider/bg-05.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="carousel-overlay">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center text-white">
                     <h5>Networking &amp; Digital Security</h5>
@@ -159,7 +161,7 @@ require_once("./links.php");
             </div>
         </div>
 
-        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘assets/img/home-slider/bg-06.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘<?= $base ?>/assets/img/home-slider/bg-06.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="carousel-overlay">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center text-white">
                     <h5>Graphic Design &amp; Publish Printing</h5>
@@ -175,7 +177,7 @@ require_once("./links.php");
             </div>
         </div>
 
-        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘assets/img/home-slider/bg-07.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="carousel-item" data-bs-interval="4000" style="background-image: url(‘<?= $base ?>/assets/img/home-slider/bg-07.jpg’); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="carousel-overlay">
                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center text-white">
                     <h5>ICT Hardware Supply, Installation &amp; Maintenance</h5>
