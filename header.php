@@ -128,8 +128,7 @@ s0.parentNode.insertBefore(s1,s0);
                    
                                     <!-- <li><a href="#">Buy Products</a></li> -->
                                     <li><a href="portfolio.php">Portfolio</a></li>
-                                                 <li><a href="#">Projects</a></li> 
-
+                                    <li><a href="blog.php">Blog</a></li>
                                     <li><a href="contact.php">Contact Us</a></li>
 
 
@@ -231,7 +230,7 @@ s0.parentNode.insertBefore(s1,s0);
             </li>
 
             <li><a href="portfolio.php">Portfolio</a></li>
-             <li><a href="#">Projects</a></li> 
+            <li><a href="blog.php">Blog</a></li>
             <li><a href="contact.php">Contact Us</a></li>
         </ul>
     </nav>

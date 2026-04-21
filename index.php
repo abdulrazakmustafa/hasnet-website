@@ -59,71 +59,47 @@ $base = rtrim(APP_URL, '/');
 
 
     <style>
-    /* Custom styles for responsive carousel height */
-    @media (max-width: 576px) {
-        #carouselExampleDark {
-            height: 90vh; /* Adjust height for mobile phones */
-        }
+    /* ── Hero Carousel ─────────────────────────── */
+    #carouselExampleDark {
+        height: 95vh;
+        min-height: 480px;
+        overflow: hidden;
     }
-
-    @media (min-width: 1200px) {
-        #carouselExampleDark {
-            height: 50vh; /* Adjust height for large screens */
-        }
+    #carouselExampleDark .carousel-inner,
+    #carouselExampleDark .carousel-item {
+        height: 100%;
+        width: 100%;
     }
-
-    /* Styles for carousel overlay and caption */
-    .carousel-item {
-        position: relative;
-    }
-
     .carousel-overlay {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        inset: 0;
+        background: rgba(0,0,0,.52);
+        z-index: 1;
     }
-
     .carousel-caption {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-       /* background-color: rgba(255, 255, 255, 0.8);  Semi-transparent white background */
+        inset: 0;
+        z-index: 2;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         padding: 20px;
-        border-radius: 10px;
-        color: #fff; /* Black text */
     }
-    .carousel-caption h5{
+    .carousel-caption h5 {
         color: #fff;
-        font-size: 3.5rem;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: clamp(1.6rem, 4vw, 3.2rem);
+        font-weight: 700;
+        margin-bottom: 16px;
     }
-    .carousel-inner, .carousel-item{
-        min-height: 95vh;
-        max-height: 95vh;
-        min-width: 100%;
-        max-width: 100%;
+    .carousel-caption p { color: rgba(255,255,255,.9); max-width: 640px; }
+    @media (max-width: 768px) {
+        #carouselExampleDark { height: 60vh; min-height: 360px; }
     }
-
-    @media (max-width: 990px) {
-        .carousel-inner, .carousel-item{
-            min-height: 50vh;
-            max-height: 50vh;
-            min-width: 100%;
-            max-width: 100%;
-        }
-        .carousel-caption {
-            position: absolute;
-            min-width: 100%;
-            padding: 20px;
-        }
-    
-        .carousel-caption h5{
-            font-size: 1.5rem;
-        }
+    @keyframes bounce {
+        0%,100% { transform: translateY(0); }
+        50%      { transform: translateY(8px); }
     }
 </style>
 
