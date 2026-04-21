@@ -27,7 +27,7 @@ $initials = implode('', array_map(fn($w) => strtoupper($w[0]), array_slice(explo
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?= APP_URL ?>/assets/fonts/fontawesome/css/all.min.css">
   <!-- Admin CSS -->
-  <link rel="stylesheet" href="<?= APP_URL ?>/admin/assets/css/admin.css">
+  <link rel="stylesheet" href="<?= APP_URL ?>/admin/assets/css/admin.css?v=<?= filemtime(__DIR__.'/../assets/css/admin.css') ?>">
   <!-- Quill Editor (rich text) -->
   <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
   <?= $extra_head ?? '' ?>

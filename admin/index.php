@@ -42,46 +42,46 @@ include __DIR__ . '/includes/header.php';
 </div>
 
 <!-- Stat Cards -->
-<div class="stat-grid">
+<div class="stat-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:28px">
 
-  <a href="<?= APP_URL ?>/admin/portfolio/index.php" class="stat-card stat-purple">
-    <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
-    <div class="stat-info">
-      <div class="stat-value"><?= $stats['portfolio'] ?></div>
-      <div class="stat-label">Portfolio Items</div>
-      <div class="stat-sub">Published works</div>
+  <a href="<?= APP_URL ?>/admin/portfolio/index.php" class="stat-card stat-purple" style="display:flex;align-items:center;gap:16px;padding:24px 20px;border-radius:14px;border:none;color:#fff;text-decoration:none;background:linear-gradient(135deg,#27235f,#4a3fbf);box-shadow:0 4px 18px rgba(0,0,0,.15);position:relative;overflow:hidden">
+    <div class="stat-icon" style="width:52px;height:52px;border-radius:12px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0"><i class="fa-solid fa-briefcase"></i></div>
+    <div style="flex:1">
+      <div style="font-size:32px;font-weight:800;line-height:1;color:#fff"><?= $stats['portfolio'] ?></div>
+      <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.9);margin-top:3px">Portfolio Items</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.6)">Published works</div>
     </div>
-    <i class="fa-solid fa-arrow-right stat-arrow"></i>
+    <i class="fa-solid fa-arrow-right" style="opacity:.5;font-size:14px"></i>
   </a>
 
-  <a href="<?= APP_URL ?>/admin/blog/index.php" class="stat-card stat-blue">
-    <div class="stat-icon"><i class="fa-solid fa-newspaper"></i></div>
-    <div class="stat-info">
-      <div class="stat-value"><?= $stats['blog'] ?></div>
-      <div class="stat-label">Blog Posts</div>
-      <div class="stat-sub">Published posts</div>
+  <a href="<?= APP_URL ?>/admin/blog/index.php" class="stat-card stat-blue" style="display:flex;align-items:center;gap:16px;padding:24px 20px;border-radius:14px;border:none;color:#fff;text-decoration:none;background:linear-gradient(135deg,#1a6fc4,#2d9cdb);box-shadow:0 4px 18px rgba(0,0,0,.15);position:relative;overflow:hidden">
+    <div class="stat-icon" style="width:52px;height:52px;border-radius:12px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0"><i class="fa-solid fa-newspaper"></i></div>
+    <div style="flex:1">
+      <div style="font-size:32px;font-weight:800;line-height:1;color:#fff"><?= $stats['blog'] ?></div>
+      <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.9);margin-top:3px">Blog Posts</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.6)">Published posts</div>
     </div>
-    <i class="fa-solid fa-arrow-right stat-arrow"></i>
+    <i class="fa-solid fa-arrow-right" style="opacity:.5;font-size:14px"></i>
   </a>
 
-  <a href="<?= APP_URL ?>/admin/subscribers/index.php" class="stat-card stat-green">
-    <div class="stat-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
-    <div class="stat-info">
-      <div class="stat-value"><?= $stats['subscribers'] ?></div>
-      <div class="stat-label">Subscribers</div>
-      <div class="stat-sub">Total subscribers</div>
+  <a href="<?= APP_URL ?>/admin/subscribers/index.php" class="stat-card stat-green" style="display:flex;align-items:center;gap:16px;padding:24px 20px;border-radius:14px;border:none;color:#fff;text-decoration:none;background:linear-gradient(135deg,#1a8a50,#27ae60);box-shadow:0 4px 18px rgba(0,0,0,.15);position:relative;overflow:hidden">
+    <div class="stat-icon" style="width:52px;height:52px;border-radius:12px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0"><i class="fa-solid fa-envelope-open-text"></i></div>
+    <div style="flex:1">
+      <div style="font-size:32px;font-weight:800;line-height:1;color:#fff"><?= $stats['subscribers'] ?></div>
+      <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.9);margin-top:3px">Subscribers</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.6)">Total subscribers</div>
     </div>
-    <i class="fa-solid fa-arrow-right stat-arrow"></i>
+    <i class="fa-solid fa-arrow-right" style="opacity:.5;font-size:14px"></i>
   </a>
 
-  <a href="<?= APP_URL ?>/admin/quotes/index.php" class="stat-card stat-orange">
-    <div class="stat-icon"><i class="fa-solid fa-file-invoice"></i></div>
-    <div class="stat-info">
-      <div class="stat-value"><?= $stats['quotes'] ?></div>
-      <div class="stat-label">New Quotes</div>
-      <div class="stat-sub">Unread requests</div>
+  <a href="<?= APP_URL ?>/admin/quotes/index.php" class="stat-card stat-orange" style="display:flex;align-items:center;gap:16px;padding:24px 20px;border-radius:14px;border:none;color:#fff;text-decoration:none;background:linear-gradient(135deg,#c0380f,#f04f23);box-shadow:0 4px 18px rgba(0,0,0,.15);position:relative;overflow:hidden">
+    <div class="stat-icon" style="width:52px;height:52px;border-radius:12px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0"><i class="fa-solid fa-file-invoice"></i></div>
+    <div style="flex:1">
+      <div style="font-size:32px;font-weight:800;line-height:1;color:#fff"><?= $stats['quotes'] ?></div>
+      <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.9);margin-top:3px">New Quotes</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.6)">Unread requests</div>
     </div>
-    <i class="fa-solid fa-arrow-right stat-arrow"></i>
+    <i class="fa-solid fa-arrow-right" style="opacity:.5;font-size:14px"></i>
   </a>
 
 </div>
