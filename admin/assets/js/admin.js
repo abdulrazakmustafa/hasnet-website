@@ -55,34 +55,53 @@
   });
 
   // ── Rich text editors (Quill) ────────────────────────────
-  document.querySelectorAll('[data-quill]').forEach(el => {
-    const hiddenId = el.dataset.quill;
-    const hidden   = document.getElementById(hiddenId);
-    if (!hidden) return;
+  function initQuillEditors() {
+    if (typeof Quill === 'undefined') {
+      setTimeout(initQuillEditors, 100);
+      return;
+    }
+    document.querySelectorAll('[data-quill]').forEach(el => {
+      if (el.__quill) return; // already initialized
+      const hiddenId = el.dataset.quill;
+      const hidden   = document.getElementById(hiddenId);
+      if (!hidden) return;
 
-    const quill = new Quill(el, {
-      theme: 'snow',
-      modules: {
-        toolbar: [
-          [{ header: [1, 2, 3, false] }],
-          ['bold', 'italic', 'underline', 'strike'],
-          [{ list: 'ordered' }, { list: 'bullet' }],
-          ['blockquote', 'code-block'],
-          ['link', 'image'],
-          [{ align: [] }],
-          ['clean']
-        ]
+      const quill = new Quill(el, {
+        theme: 'snow',
+        placeholder: 'Write your content here...',
+        modules: {
+          toolbar: [
+            [{ header: [1, 2, 3, false] }],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{ color: [] }, { background: [] }],
+            [{ list: 'ordered' }, { list: 'bullet' }],
+            ['blockquote', 'code-block'],
+            ['link', 'image'],
+            [{ align: [] }],
+            ['clean']
+          ]
+        }
+      });
+
+      el.__quill = quill;
+
+      // restore saved content
+      if (hidden.value && hidden.value.trim()) {
+        quill.root.innerHTML = hidden.value;
       }
-    });
 
-    // sync with hidden input
-    if (hidden.value) quill.root.innerHTML = hidden.value;
+      // sync to hidden on every change
+      quill.on('text-change', () => {
+        hidden.value = quill.root.innerHTML;
+      });
 
-    const form = hidden.closest('form');
-    form?.addEventListener('submit', () => {
-      hidden.value = quill.root.innerHTML;
+      const form = hidden.closest('form');
+      form?.addEventListener('submit', () => {
+        hidden.value = quill.root.innerHTML;
+      });
     });
-  });
+  }
+  initQuillEditors();
 
   // ── Slug auto-generation from title ─────────────────────
   const titleInput = document.getElementById('input-title');

@@ -23,7 +23,7 @@ s0.parentNode.insertBefore(s1,s0);
 <header class="header-section header-gradient">
     <div class="topbar">
         <div class="container">
-            <div class="row align-item-center">
+            <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="topbar-left">
                         <p class="mb-0">Driven by Innovation, Powered by Engineering! <strong>Enginnovation</strong></p>
@@ -31,15 +31,15 @@ s0.parentNode.insertBefore(s1,s0);
                 </div>
                 <div class="col-md-6">
                     <div class="topbar-right text-end">
-                    <a href="https://wa.me/+255777019901" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/ict.hasnet/?hl=en"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/hasnet.ict.solution/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/i/flow/login?redirect_after_login=%2FICT_HasNet"><i class="fab fa-twitter"></i></a>
-                        <a href="https://tz.linkedin.com/in/hasnet-ict-solution-b80246210"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.youtube.com/@hasnetictsolution7334"><i class="fab fa-youtube"></i></a>
-
-                        <a href="#">Sign in</a>
-                        <!-- <a href="signup.php">Sign up</a> -->
+                        <div class="topbar-social-links">
+                            <a href="https://wa.me/+255777019901" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/ict.hasnet/?hl=en"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/hasnet.ict.solution/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/i/flow/login?redirect_after_login=%2FICT_HasNet"><i class="fab fa-twitter"></i></a>
+                            <a href="https://tz.linkedin.com/in/hasnet-ict-solution-b80246210"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/@hasnetictsolution7334"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <a href="#" class="topbar-signin">Sign in</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@ s0.parentNode.insertBefore(s1,s0);
                    
                                     <!-- <li><a href="#">Buy Products</a></li> -->
                                     <li><a href="portfolio.php">Portfolio</a></li>
-                                    <li><a href="blog.php">Blog</a></li>
+                                    <li><a href="projects.php">Projects</a></li>
                                     <li><a href="contact.php">Contact Us</a></li>
 
 
@@ -161,10 +161,7 @@ s0.parentNode.insertBefore(s1,s0);
 
                             <!-- Get Quote Button -->
                           
-                            <button type="button" class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              <b>Get Quote</b>
-                              
-                            </button>
+                            <button type="button" class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Quote</button>
 
                             <!-- Get Quote Button -->
 
@@ -230,7 +227,7 @@ s0.parentNode.insertBefore(s1,s0);
             </li>
 
             <li><a href="portfolio.php">Portfolio</a></li>
-            <li><a href="blog.php">Blog</a></li>
+            <li><a href="projects.php">Projects</a></li>
             <li><a href="contact.php">Contact Us</a></li>
         </ul>
     </nav>

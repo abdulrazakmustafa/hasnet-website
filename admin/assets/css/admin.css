@@ -175,7 +175,10 @@ a { text-decoration: none; color: inherit; }
   margin-left: var(--admin-sidebar-w);
   margin-top: var(--admin-topbar-h);
   min-height: calc(100vh - var(--admin-topbar-h));
-  padding: 28px 28px;
+  padding: 28px;
+  width: calc(100vw - var(--admin-sidebar-w));
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 /* ── Cards ────────────────────────────────────────────────── */
